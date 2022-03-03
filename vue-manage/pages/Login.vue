@@ -33,7 +33,7 @@
         ></el-input>
     </el-form-item>
     <el-form-item class="login-submit">
-        <el-button type="primary" @click="login" class="login-submit">登录</el-button>
+        <el-button type="primary" @click="login" >登录</el-button>
     </el-form-item>
   </el-form>
 </template>
@@ -102,7 +102,11 @@ export default {
     color: #505458;
 }
 .login-submit{
-    margin: 10px auto 0 auto; 
-    
+    // margin: 10px auto 0 auto; 
+    width: 100%;
+    height: 100%;
+    .el-button{
+        margin-left:37px;
+    }
 }
 </style>
