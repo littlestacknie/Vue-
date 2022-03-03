@@ -29,7 +29,6 @@ export default {
             Cookie.remove('menu')
         },
         addMenu(state, router) {
-
             if (!Cookie.get('menu')) {
                 return
             }
@@ -51,9 +50,8 @@ export default {
                 }
             });
             //动态添加路由
-            console.log(menuArray, 'menuArray');
             menuArray.forEach(item => {
-                router.addRoutes('main', item)
+                router.addRoute('main', item)
             })
         }
     },

@@ -7,7 +7,7 @@ export default {
     mutations: {
         setToken(state, val) {
             state.token = val
-            Cookie.set('tooken', val)
+            Cookie.set('token', val)
         },
         clearToken(state) {
             state.token = ''
